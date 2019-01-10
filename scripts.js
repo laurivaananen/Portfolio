@@ -14,6 +14,12 @@ var recipe_previous = document.getElementById('recipe-previous');
 var recipe_next = document.getElementById('recipe-next');
 var recipe_lightbox_images = recipe_lightbox.getElementsByClassName("lightbox-image");
 
+var wagtail_lightbox = document.getElementById('wagtail-lightbox');
+var wagtail_image = document.getElementById('wagtail-image');
+var wagtail_previous = document.getElementById('wagtail-previous');
+var wagtail_next = document.getElementById('wagtail-next');
+var wagtail_lightbox_images = wagtail_lightbox.getElementsByClassName("lightbox-image");
+
 var exit_buttons = document.getElementsByClassName('exit');
 
 const show_image = (images, prev, next) => index => {
@@ -40,6 +46,18 @@ const show_image_2 = (images, prev, next) => index => {
     }
 }
 
+const show_image_3 = (images, prev, next) => index => {
+    for(var x = 0; x < images.length; x++) {
+        if (x === Math.abs(index % images.length)) {
+            images[x].style.display = 'block';
+        } else {
+            images[x].style.display = 'none';
+        }
+        prev.onclick = () => wagtail_carousel(index - 1);
+        next.onclick = () => wagtail_carousel(index + 1);
+    }
+}
+
 const ebay_carousel = show_image(ebay_lightbox_images, ebay_previous, ebay_next);
 
 ebay_image.onclick = () => {
@@ -52,6 +70,13 @@ const recipe_carousel = show_image_2(recipe_lightbox_images, recipe_previous, re
 recipe_image.onclick = () => {
     recipe_lightbox.style.display = 'block';
     recipe_carousel(0);
+}
+
+const wagtail_carousel = show_image_3(wagtail_lightbox_images, wagtail_previous, wagtail_next);
+
+wagtail_image.onclick = () => {
+    wagtail_lightbox.style.display = 'block';
+    wagtail_carousel(0);
 }
 
 for (var x = 0; x < exit_buttons.length; x++) {
