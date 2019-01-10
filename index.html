@@ -23,9 +23,21 @@
     <div id="ebay-lightbox" class="lightbox">
         <div class="lightbox-images">
             <a id="ebay-previous" class="previous">&#10094;</a>
+            <a id="ebay-next" class="next">&#10095;</a>
+            <a class='exit'>⨯</a>
             <img class="lightbox-image" src="ebay.png" alt="Ebay clone">
             <img class="lightbox-image" src="ebay_2.png" alt="Ebay clone">
-            <a id="ebay-next" class="next">&#10095;</a>
+        </div>
+    </div>
+
+    <div id="recipe-lightbox" class="lightbox">
+        <div class="lightbox-images">
+            <a id="recipe-previous" class="previous">&#10094;</a>
+            <a id="recipe-next" class="next">&#10095;</a>
+            <a class='exit'>⨯</a>
+            <img class="lightbox-image" src="recipe.png" alt="Recipe App">
+            <img class="lightbox-image" src="recipe_2.png" alt="Recipe App">
+            <img class="lightbox-image" src="recipe_3.png" alt="Recipe App">
         </div>
     </div>
 
@@ -72,17 +84,26 @@
             <ul class="center project-list" >
                 <li>
                     <div class="project" >
-                        <h3>Ebay Clone</h3>
+                        <img id="ebay-image" class="image" src="ebay.png" alt="Ebay clone">
+                        <div class="description">
+                            <h3>Ebay Clone</h3>
+                            <p>Web application where user can auction their items or bid on other peoples items</p>
+                            <p>Modern responsive mobile friendly UI</p>
+                            <p>Users can register, login, edit their profile information, add items for sale, edit their sale information, bid on other peoples items</p>
+                            <p>Full admin panel to see everything that's happening on the site</p>
+                            <p>Admin email: <span>admin@email.com</span> Admin password: <span>based_god</span></p>
+                            <p>Go to <a class="long-word" href="http://www.laurivaananen.com:8001/admin">http://www.laurivaananen.com:8001/admin</a> while you are logged in as admin</p>
+                        </div>
+
                         <ul class="links">
-                            <li><a href="">Visit Site</a></li>
-                            <li><a href="">Source</a></li>
+                            <li><a href="http://www.laurivaananen.com:8001/">Visit Site</a></li>
+                            <li><a href="https://github.com/laurivaananen/Huutokauppa">Source</a></li>
                         </ul>
-                        <p>App where user can auction their items or bid on others items
-                        </p>
+                        
                         <ul class="tools" >
                             <li>Flask</li>
-                            <li>Postgresql</li>
                             <li>Docker</li>
+                            <li>Postgresql</li>
                             <li>Redis</li>
                             <li>Nginx</li>
                             <li>Celery</li>
@@ -90,54 +111,28 @@
                     </div>
                 </li>
                 <li>
-                    <div class="project">
-                        <img id="ebay-image" class="image" src="ebay.png" alt="Ebay clone">
-                        <h3>Recipe App</h3>
+                    <div class="project" >
+                        <img id="recipe-image" class="image" src="recipe.png" alt="Recipe App">
+                        <div class="description">
+                            <h3>Recipe App</h3>
+                            <p>Web application where user can share their favorite recipes from Asia</p>
+                            <p>Single page application build with React and a REST API built with Django rest framework</p>
+                            <p>Users can register, login, add recipes and search other peoples recipes</p>
+                            <p>Deployed with Docker and Nginx</p>
+                        </div>
+
                         <ul class="links">
-                            <li><a href="">Visit Site</a></li>
-                            <li><a href="">Source</a></li>
+                            <li><a href="http://www.laurivaananen.com/cooking/">Visit Site</a></li>
+                            <li><a href="https://github.com/laurivaananen/RecipeApp">Source</a></li>
                         </ul>
-                        <p>App where user can share their favorite Asian recipes
-                        </p>
+
                         <ul class="tools" >
                             <li>Django</li>
                             <li>React</li>
-                            <li>Postgresql</li>
+                            <li>Redux</li>
                             <li>Docker</li>
-                            <li>Nginx</li>
-                        </ul>
-                    </div>
-                </li>
-                <li>
-                    <div class="project" >
-                        <h3>Blog/Portfolio</h3>
-                        <ul class="links">
-                            <li><a href="">Visit Site</a></li>
-                            <li><a href="">Source</a></li>
-                        </ul>
-                        <p>My old blog and portfolio
-                        </p>
-                        <ul class="tools" >
-                            <li>Django</li>
-                            <li>Wagtail CMS</li>
                             <li>Postgresql</li>
-                            <li>Docker</li>
                             <li>Nginx</li>
-                        </ul>
-                    </div>
-                </li>
-                <li>
-                    <div class="project" >
-                        <h3>Slack Bot</h3>
-                        <ul class="links">
-                            <li><a href="">Visit Site</a></li>
-                            <li><a href="">Source</a></li>
-                        </ul>
-                        <p>Locally runnable Slack bot that responds to users messages
-                        </p>
-                        <ul class="tools" >
-                            <li>Flask</li>
-                            <li>PyQt</li>
                         </ul>
                     </div>
                 </li>
