@@ -10,14 +10,18 @@
 <body>
     <header>
         <div class="container">
-        <nav class="center">
-            <ul>
-                <li><a target="_blank" href="https://github.com/laurivaananen">Github</a></li>
-                <li><a href="#">LinkedIn</a></li>
-                <li><a href="#">Resume</a></li>
-            </ul>
-        </nav>
-    </div>
+            <nav class="center">
+                <ul>
+                    <li><a target="_blank" href="https://github.com/laurivaananen">Github</a></li>
+                    <li><a href="#">LinkedIn</a></li>
+                    <li><a href="#">Resume</a></li>
+                </ul>
+            </nav>
+            <section class="hero center">
+                <h1 class="center hero-h1" >Lauri Väänänen</h1>
+                <h2 class="center hero-h2">Hi, I'm a web developer specializing in building modern full-stack web applications</h2>
+            </section>
+        </div>
     </header>
 
     <div id="ebay-lightbox" class="lightbox">
@@ -56,38 +60,35 @@
         </div>
     </div>
 
-    <section class="hero">
-        <div class="container">
-            <h1 class="center" >Lauri Väänänen</h1>
-            <h2 class="center">I'm a web developer focusing on building fullstack apps with python and javascript</h2>
-        </div>
-    </section>
+    
 
     <section>
-        <div class="container dark skills">
-            <h2 class="center" >My Skills</h2>
-            <div class="split-container center">
-                <div class="left">
-                    <h3>Programming Languages</h3>
-                    <ul class="feature-list">
-                        <li>Python</li>
-                        <li>Javascript</li>
-                        <li>HTML</li>
-                        <li>CSS</li>
-                        <li>Java</li>
-                        <li>SQL</li>
-                    </ul>
-                </div>
-                <div class="right">
-                    <h3>Tools and Frameworks</h3>
-                    <ul class="feature-list">
-                        <li>Django</li>
-                        <li>Docker</li>
-                        <li>React.js</li>
-                        <li>Git</li>
-                        <li>Nginx</li>
-                        <li>Selenium</li>
-                    </ul>
+        <div class="container skills">
+            <div class="container-content center">
+                <h2>My Skills</h2>
+                <div class="split-container">
+                    <div class="left">
+                        <h3>Programming Languages</h3>
+                        <ul class="feature-list">
+                            <li>Python</li>
+                            <li>Javascript</li>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>Java</li>
+                            <li>SQL</li>
+                        </ul>
+                    </div>
+                    <div class="right">
+                        <h3>Tools and Frameworks</h3>
+                        <ul class="feature-list">
+                            <li>Django</li>
+                            <li>Docker</li>
+                            <li>React.js</li>
+                            <li>Git</li>
+                            <li>Nginx</li>
+                            <li>Selenium</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
@@ -98,66 +99,91 @@
             <h2 class="center">My Projects</h2>
             <ul class="center project-list" >
                 <li>
-                    <div class="project" >
-                        <img id="ebay-image" class="image" src="ebay.png" alt="Ebay clone">
-                        <div class="description">
+                    <div class="split-container project-item">
+                        <div class="left">
+                            <img id="ebay-image" class="image split-image" src="ebay.png" alt="Ebay clone">
+                        </div>
+
+                        <div class="right">
                             <h3>Ebay Clone</h3>
+                            <ul class="project-lang" >
+                                <li>Flask</li>
+                                <li>Docker</li>
+                                <li>Postgresql</li>
+                                <li>Redis</li>
+                                <li>Nginx</li>
+                                <li>Celery</li>
+                            </ul>
                             <p>Web application where user can auction their items or bid on other peoples items</p>
                             <p>Modern responsive mobile friendly UI</p>
                             <p>Users can register, login, edit their profile information, add items for sale, edit their sale information, bid on other peoples items</p>
                             <p>Full admin panel to see everything that's happening on the site</p>
-                            <p>Admin email: <span>admin@email.com</span> Admin password: <span>based_god</span></p>
-                            <p>Go to <a target="_blank" class="long-word" href="http://www.laurivaananen.com:8001/admin">http://www.laurivaananen.com:8001/admin</a> while you are logged in as admin</p>
-                        </div>
 
-                        <ul class="links">
-                            <li><a target="_blank" href="http://www.laurivaananen.com:8001/">Visit Site</a></li>
-                            <li><a target="_blank" href="https://github.com/laurivaananen/Huutokauppa">Source</a></li>
-                        </ul>
-                        
-                        <ul class="tools" >
-                            <li>Flask</li>
-                            <li>Docker</li>
-                            <li>Postgresql</li>
-                            <li>Redis</li>
-                            <li>Nginx</li>
-                            <li>Celery</li>
-                        </ul>
+                            <p><a class="link" target="_blank" href="http://www.laurivaananen.com:8001/">Visit Site</a></p>
+                            <p><a class="link" target="_blank" href="https://github.com/laurivaananen/Huutokauppa">Source</a></p>
+
+                            
+                        </div>
                     </div>
                 </li>
                 <li>
-                    <div class="project" >
-                        <img id="recipe-image" class="image" src="recipe.png" alt="Recipe App">
-                        <div class="description">
+                    <div class="split-container project-item">
+                        <div class="left">
+                            <img id="recipe-image" class="image split-image" src="recipe.png" alt="Recipe App">
+                        </div>
+
+                        <div class="right">
                             <h3>Recipe App</h3>
+                            <ul class="project-lang" >
+                                <li>Django</li>
+                                <li>React</li>
+                                <li>Redux</li>
+                                <li>Docker</li>
+                                <li>Postgresql</li>
+                                <li>Nginx</li>
+                            </ul>
                             <p>Web application where user can share their favorite recipes from Asia</p>
                             <p>Single page application build with React and a REST API built with Django rest framework</p>
                             <p>Users can register, login, add recipes and search other peoples recipes</p>
                             <p>Deployed with Docker and Nginx</p>
+
+                            <p><a class="link" target="_blank" href="http://www.laurivaananen.com/cooking/">Visit Site</a></p>
+                            <p><a class="link" target="_blank" href="https://github.com/laurivaananen/RecipeApp">Source</a></p>
                         </div>
 
-                        <ul class="links">
-                            <li><a target="_blank" href="http://www.laurivaananen.com/cooking/">Visit Site</a></li>
-                            <li><a target="_blank" href="https://github.com/laurivaananen/RecipeApp">Source</a></li>
-                        </ul>
 
-                        <ul class="tools" >
-                            <li>Django</li>
-                            <li>React</li>
-                            <li>Redux</li>
-                            <li>Docker</li>
-                            <li>Postgresql</li>
-                            <li>Nginx</li>
-                        </ul>
                     </div>
                 </li>
                 <li>
+                    <div class="split-container project-item">
+                        <div class="left">
+                            <img id="wagtail-image" class="image split-image" src="wagtail_2.png" alt="Ebay clone">
+                        </div>
+
+                        <div class="right">
+                            <h3>Portfolio and Blog</h3>
+                            <ul class="project-lang" >
+                                <li>Django</li>
+                                <li>Wagtail CMS</li>
+                                <li>Docker</li>
+                                <li>Postgresql</li>
+                                <li>Nginx</li>
+                            </ul>
+                            <p>I built this application using the Wagtail CMS, Django, Nginx and Postgresql and containerized it with Docker</p>
+                            <p>Blog owner can add new posts easily using the content management system</p>
+
+                            <p><a class="link" target="_blank" href="https://github.com/laurivaananen/laurivaananen">Source</a></p>
+
+                            
+                        </div>
+                    </div>
+                </li>
+                <!-- <li>
                     <div class="project" >
                         <img id="wagtail-image" class="image" src="wagtail_2.png" alt="Wagtail App">
                         <div class="description">
                             <h3>Portfolio and Blog</h3>
-                            <p>I built this application using the Wagtail CMS</p>
-                            <p>Blog owner can add new posts from the CMS interface</p>
+                            <p>I built this application using the Wagtail CMS, Django, Nginx and Postgresql and containerized it with Docker</p>
                         </div>
 
                         <ul class="links">
@@ -172,7 +198,7 @@
                             <li>Nginx</li>
                         </ul>
                     </div>
-                </li>
+                </li> -->
             </ul>
         </div>
     </section>
@@ -181,9 +207,8 @@
         <div class="container light about">
             <h2 class="center" >About Me</h2>
             <div class="center">
-                <p>Hey, thanks for checking out my website!</p>
-                <p>I Am currently studying computer science at the university of Helsinki but always looking for new opportunities</p>
-                <p>You can contact me at <span>lauri.e.vaananen@helsinki.fi</span></p>
+                <p>Thanks for checking out my portfolio, if you want to contact me please email me at: <span>lauri.e.vaananen@helsinki.fi</span></p>
+                <p>I Am currently studying computer science at the university of Helsinki but always looking for new opportunities whatever that is job you want to hire me or and open-source you want to work on together</p>
             </div>
         </div>
     </section>
