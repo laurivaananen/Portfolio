@@ -21,13 +21,7 @@ body {
 /* NAVIGATION */
 
 header {
-    /* background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("mountains_4.jpg"); */
-    /* background-image: rgba(0,0,0,0.2) url("mountains_4.jpg"); */
-    background-position: center;
-    /* background-color: hsla(210, 90%, 45%, 1); */
-    background-repeat: no-repeat;
     background-color: var(--blue);
-    background-size: cover;
 }
 
 nav {
@@ -82,7 +76,7 @@ nav a:focus, nav a:hover {
     margin: 0;
     margin-bottom: 4rem;
     font-weight: 600;
-    color: hsla(0, 0%, 100%, 0.9);
+    color: hsla(0, 0%, 100%, 0.85);
 }
 
 
@@ -106,7 +100,7 @@ nav a:focus, nav a:hover {
     font-size: 2rem;
     margin: 0;
     margin-bottom: 2rem;
-    color: rgba(0, 0, 0, 0.25);
+    color: rgba(0, 0, 0, 0.5);
 }
 
 .split-container {
@@ -151,13 +145,6 @@ nav a:focus, nav a:hover {
     border-bottom: 1px rgba(0, 0, 0, 0.075) solid;
 }
 
-.skills h3 {
-    font-weight: 400;
-    font-size: 2rem;
-    margin-bottom: 2rem;
-    color: rgba(0, 0, 0, 0.25);
-}
-
 .tools {
     list-style-type: none;
     margin: 0;
@@ -197,24 +184,7 @@ nav a:focus, nav a:hover {
     margin-bottom: 1rem;
     margin-right: 0.5rem;
     display: inline-block;
-    color: rgba(0, 0, 0, 0.65);
-}
-
-.project>img {
-    max-height: 30rem;
-    max-width: 100%;
-    cursor: pointer;
-    grid-column: 1;
-}
-
-.feature-list {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-}
-
-.feature-list li {
-    margin: 0.75rem 0;
+    color: rgba(0, 0, 0, 0.5);
 }
 
 .project-list {
@@ -285,15 +255,10 @@ nav a:focus, nav a:hover {
 }
 
 .links>li>a {
-    background-color: inherit;
     padding: 0.5rem 0.5rem;
-    /* border: 1px solid var(--light-blue); */
-    /* border-radius: 0.25rem; */
     text-decoration: none;
     color: hsla(210, 90%, 45%, 0.65);
     font-weight: 700;
-    margin-right: 0.75rem;
-    line-height: 2rem;
 }
 
 .links>li>a:hover {
@@ -383,8 +348,6 @@ span {
     cursor: pointer;
 }
 
-
-
 .exit:hover {
     text-shadow: 0px 0px 6px rgba(0, 0, 0, 0.85);
 }
@@ -394,7 +357,7 @@ span {
 }
 
 
-
+/* MEDIA QUERIES */
 
 @media only screen and (max-width: 959px) {
     .hero .hero-h1 {
@@ -416,14 +379,12 @@ span {
     .split-container {
         display: grid;
         grid-template-columns: 1fr;
-        /* grid-template-rows: 1fr 1fr; */
         grid-row-gap: 4rem;
     }
 
     .split-container.project-item {
         display: grid;
         grid-template-columns: 1fr;
-        /* grid-row-gap: 8rem; */
     }
 
     .split-container .left {
