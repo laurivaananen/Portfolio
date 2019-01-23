@@ -14,7 +14,7 @@ body {
     --blue: hsla(210, 90%, 45%, 1);
     --light-blue: hsla(210, 90%, 45%, .85);
     --gray: hsla(210, 0%, 10%, 1);
-    --light-gray: hsla(210, 0%, 65%, 1);
+    --light-gray: hsla(0, 0%, 65%, 1);
 }
 
 
@@ -100,7 +100,7 @@ nav a:focus, nav a:hover {
     font-size: 2rem;
     margin: 0;
     margin-bottom: 2rem;
-    color: rgba(0, 0, 0, 0.5);
+    color: rgba(0, 0, 0, 0.7);
 }
 
 .split-container {
@@ -120,7 +120,6 @@ nav a:focus, nav a:hover {
 .dark {
     background-color: rgb(25, 33, 44);
     color: hsl(0, 0%, 100%, 0.85);
-    /* color: rgb(230, 230, 230); */
 }
 
 .blue {
@@ -184,7 +183,7 @@ nav a:focus, nav a:hover {
     margin-bottom: 1rem;
     margin-right: 0.5rem;
     display: inline-block;
-    color: rgba(0, 0, 0, 0.5);
+    color: rgba(0, 0, 0, 0.7);
 }
 
 .project-list {
@@ -279,7 +278,7 @@ nav a:focus, nav a:hover {
 
 span {
     font-weight: 700;
-    color: hsla(0, 0%, 100%, 0.85);
+    color: hsla(0, 0%, 100%, 0.9);
 }
 
 
